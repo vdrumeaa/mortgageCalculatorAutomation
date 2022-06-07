@@ -21,7 +21,6 @@ public class InterestRate {
 
     @FindBy(xpath = "//p[contains(text(),'Rate must be greater than or equal to 0')]")
     public WebElement negativeValueErrorMessage;
-    ///html//div[@id='zmm-calc-payment']//div[@class='Flex-c11n-8-64-1__sc-n94bjd-0 kfWtKv']/div[1]/form[@class='Form-c11n-8-64-1__sc-iqxs9k-0 gjlJsf']//p[@class='StyledFormHelp-c11n-8-64-1__sc-h3s6hy-0 lfSzwh']
 
     @FindBy(xpath = "//p[contains(text(),'Rate must be less than or equal to 100')]")
     //@FindBy(xpath = "//p[.='Rate must be less than or equal to 100']")
