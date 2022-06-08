@@ -8,7 +8,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class US8_SeeCurrentRates_Link {
+public class US7_SeeCurrentRates_Link {
 
     InterestRate interestRate = new InterestRate();
 
