@@ -32,18 +32,28 @@ public class US1_InvalidValues_InterestRate {
         interestRate.interestRateInputBox.sendKeys(string);
     }
 
-    @Then("I should see error messages {string}")
-    public void i_should_see_error_messages(String string) {
-        BrowserUtils.sleep(5);
-        String actualErrorMessageNegatives = interestRate.negativeValueErrorMessage.getText();
-        System.out.println("Actual Error Message = " + actualErrorMessageNegatives);
-        System.out.println("Expected Error Message = " + string);
-        assertEquals(string, actualErrorMessageNegatives);
-    }
-
-
     @And("click empty space")
     public void clickEmptySpace() {
         interestRate.emptyLabel.click();
     }
+
+    @Then("I should see error messages {string}")
+    public void i_should_see_error_messages(String string) {
+        BrowserUtils.sleep(3);
+        String actualErrorMessageNegatives = interestRate.negativeValueErrorMessage.getText();
+        System.out.println("Actual Error Message = " + actualErrorMessageNegatives);
+        System.out.println("Expected Error Message = " + string);
+        assertEquals(string, actualErrorMessageNegatives);
+
+    }
+
+    @Then("I should see error messages for values greater than one hundred {string}")
+    public void iShouldSeeErrorMessagesForValuesGreaterThanOneHundred(String string) {
+        BrowserUtils.sleep(3);
+        String actualErrorMessageValueHigherThan100 = interestRate.valueHigherThan101ErrorMessage.getText();
+        System.out.println("Actual Error Message = " + actualErrorMessageValueHigherThan100);
+        System.out.println("Expected Error Message = " + string);
+        assertEquals(string, actualErrorMessageValueHigherThan100);
+    }
 }
+

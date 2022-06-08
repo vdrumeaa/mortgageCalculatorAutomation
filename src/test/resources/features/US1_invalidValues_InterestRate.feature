@@ -9,7 +9,7 @@ Given I am  on the mortgage calculator page
    When I clear the input box
     And I enter "<string>" values
    And click empty space
-        Then I should see error messages "Rate must be greater than or equal to 0"
+   Then I should see error messages "Rate must be greater than or equal to 0"
    Examples:
      |string  |
      |-1   |
@@ -19,7 +19,8 @@ Given I am  on the mortgage calculator page
     Given I am on the mortgage calculator page
     When I clear the input box
     And I enter "<string>" values
-    Then I should see error messages "Rate must be less than or equal to 100"
+    And click empty space
+    Then I should see error messages for values greater than one hundred "Rate must be less than or equal to 100"
     Examples:
       | string |
       | 101  |
