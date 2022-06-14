@@ -1,6 +1,6 @@
 Project Name: #{mortgageCalculatorAutomation}
 
-Programming Language: Java
+Programming Language: Java 11
 IDE: IntelliJ IDEA
 Build Tool: Maven
 Framework: Selenium WebDriver with Junit
@@ -45,4 +45,5 @@ Project Link: https://github.com/vdrumeaa/mortgageCalculatorAutomation.git
 Resources:
 Junit Documentation
 Java Documentation
+Selenium Documentation
 Sack Overflow: A great resource to search for issues not explicitly covered by documentation
